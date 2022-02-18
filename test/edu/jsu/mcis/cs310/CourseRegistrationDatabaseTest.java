@@ -25,6 +25,7 @@ public class CourseRegistrationDatabaseTest {
     @Before
     public void setUp() {
         
+        
         db = new Database("cs310_p2_user", "P2!user", "localhost");
         
     }
@@ -218,6 +219,7 @@ public class CourseRegistrationDatabaseTest {
     public void testGetSections() {
         
         JSONArray r6 = (JSONArray)JSONValue.parse(s6);
+        System.out.println("Jasson Array"+r6);
         JSONArray r7 = (JSONArray)JSONValue.parse(s7);
         JSONArray r8 = (JSONArray)JSONValue.parse(s8);
         JSONArray r9 = (JSONArray)JSONValue.parse(s9);
